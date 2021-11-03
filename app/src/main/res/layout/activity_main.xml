@@ -134,21 +134,23 @@
         android:id="@+id/emailId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="userName"
+        android:hint="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FnameId"
-        app:layout_constraintVertical_bias="0.04">
+        app:layout_constraintVertical_bias="0.04"
+        app:suffixText="\@gmail.com">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="340dp"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_marginTop="4dp"
-            android:backgroundTint="#E6E2E2" />
+            android:backgroundTint="#E6E2E2"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 

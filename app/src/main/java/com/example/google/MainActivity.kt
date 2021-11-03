@@ -8,6 +8,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,19 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener {
-            val toast = Toast.makeText(this, "Register successfully", Toast.LENGTH_SHORT)
+            val toast = Toast.makeText(this, "Register successfully", Toast.LENGTH_LONG)
+            toast.show()
+        }
+
+        val text1: TextView = findViewById(R.id.bigerrMass)
+        text1.setOnClickListener {
+            val toast = Toast.makeText(this, "Instead hve been clicked", Toast.LENGTH_SHORT)
+            toast.show()
+        }
+
+        val text2: TextView = findViewById(R.id.signIN)
+        text2.setOnClickListener {
+            val toast = Toast.makeText(this, "Sign in instead", Toast.LENGTH_SHORT)
             toast.show()
         }
 
